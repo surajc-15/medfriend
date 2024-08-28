@@ -84,9 +84,7 @@ def medreport(pdf_path):
 
     # Extract text from image
     text = pytesseract.image_to_string(img, lang='eng')
-    print(text)
     data = extract_and_save_data(text)
-    print(data)
     return data
 
 @app.route('/upload-pdf', methods=['POST'])
