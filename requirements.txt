@@ -16,3 +16,4 @@ numpy
 pdf2image
 Pillow
 fpdf
+gunicorn
